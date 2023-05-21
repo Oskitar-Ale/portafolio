@@ -8,6 +8,15 @@
 
     <title>Document</title>
 
+    <!-- =====FONTS =====----->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- =====BOXICONS =====----->
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
@@ -30,9 +39,14 @@
     <!-- ===== NAVEGACION ===== -->
     <header class="header js-header">
       <div class="container">
-        <div class="logo"><img src="" alt="" /> logo</div>
+        <div class="logo">
+          <a href="#"><img src="./img/logo.png" alt="" /></a>
+        </div>
         <nav class="nav__menu">
-          <ul class="nav__list">
+          <button class="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="nav__list menu-nav ">
             <li class="nav__item">
               <a href="#" class="nav__link active" data-section="0">
                 <i class="bx bx-home-alt-2"></i>
@@ -66,6 +80,7 @@
     </header>
 
     <!-- ===== INICIO ===== -->
+
     <section class="section1" id="Home">
       <div class="home">
         <div class="home__main">
@@ -76,25 +91,44 @@
             </h2>
             <h3 class="gray mbg">FrontEnd & BackEnd Developer</h3>
             <p>
-              I am a passionate web developer focused on creating interactive and 
-              functional experiences. I use programming languages, frameworks, and modern 
-              tools to build high-quality web solutions. I love learning and staying up-to-date
-               with the latest trends in web development. I am always ready to take on new challenges 
-               and push my projects to the maximum.
+              I am a passionate web developer focused on creating interactive
+              and functional experiences. I use programming languages,
+              frameworks, and modern tools to build high-quality web solutions.
+              I love learning and staying up-to-date with the latest trends in
+              web development. I am always ready to take on new challenges and
+              push my projects to the maximum.
             </p>
 
             <div class="home__content-btn">
-              <a href="" class="home__btn">
-                <i class="fa-brands fa-github-alt"></i>
+              <a
+                href="https://twitter.com/by_borous"
+                class="home__btn"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-twitter fa-2xl"
+                  style="color: #00acee"
+                ></i>
               </a>
-              <a href="" class="home__btn">
-                <i class="fa-brands fa-github-alt"></i>
+              <a
+                href="https://github.com/Oskitar-Ale"
+                class="home__btn"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-github fa-2xl"
+                  style="color: #171515"
+                ></i>
               </a>
-              <a href="" class="home__btn">
-                <i class="fa-brands fa-github-alt"></i>
-              </a>
-              <a href="" class="home__btn">
-                <i class="fa-brands fa-github-alt"></i>
+              <a
+                href="https://www.linkedin.com/"
+                class="home__btn"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-linkedin fa-2xl"
+                  style="color: #0e76a8"
+                ></i>
               </a>
             </div>
           </div>
@@ -111,32 +145,38 @@
 
     <!-- ===== SKILLS ===== -->
 
-    <section class="section">
+    <section class="section bxsection">
       <div class="section__main">
-        <h1 class="section__title">skill</h1>
+        <h1 class="section__title titleone">Skills</h1>
         <ul class="section__container">
-          <li id="FrontEnd">FrontEnd</li>
-          <li id="BackEnd">BackEnd</li>
-          <li id="Otros">Otros</li>
+          <button class="menu__btn">
+            <li class="button_top" id="FrontEnd">FrontEnd</li>
+          </button>
+          <button class="menu__btn">
+            <li class="button_top" id="BackEnd">BackEnd</li>
+          </button>
+          <button class="menu__btn">
+            <li class="button_top" id="Otros">Otros</li>
+          </button>
         </ul>
       </div>
       <div class="container-icons"></div>
     </section>
-
     <!-- ===== PROYECTS ===== -->
 
     <section class="section">
       <div class="section__main">
-        <h1 class="section__title">Proyects</h1>
+        <h1 class="section__title">Projects</h1>
         <div class="section-proyect">
+          <!---=====CARD 1=====-->
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./img/bb.webp" alt="" />
+                <img src="./img/proyecto1.JPG" alt="" />
               </div>
 
               <div class="flip-card-back">
-                <p class="flip-title">Login witch Flask</p>
+                <p class="flip-title">halloween website</p>
 
                 <div class="flip-container-icon">
                   <div class="flip-icon">
@@ -150,23 +190,33 @@
                 </div>
                 <div class="flip-container-btn">
                   <button class="flip-btn">
-                    <span> Demo</span>
+                    <a
+                      href="https://oskitar-ale.github.io/proyectoPaginaWeb/"
+                      target="_blank"
+                      ><span>Demo</span></a
+                    >
                   </button>
                   <button class="flip-btn">
-                    <span> Code</span>
+                    <a
+                      href="https://github.com/Oskitar-Ale/proyectoPaginaWeb"
+                      target="_blank"
+                      ><span>Code</span></a
+                    >
                   </button>
                 </div>
               </div>
             </div>
           </div>
+
+          <!---=====CARD 2=====-->
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./img/bb.webp" alt="" />
+                <img src="./img/proyecto2.JPG" alt="" />
               </div>
 
               <div class="flip-card-back">
-                <p class="flip-title">Login witch Flask</p>
+                <p class="flip-title">Login with database authentication</p>
 
                 <div class="flip-container-icon">
                   <div class="flip-icon">
@@ -174,16 +224,22 @@
                     <p>Html</p>
                     <img src="./img/css-3-svgrepo-com.svg" alt="" />
                     <p>Css</p>
-                    <img src="./img/javascript-svgrepo-com.svg" alt="" />
-                    <p>Javascript</p>
+                    <img src="./img/bootstrap-svgrepo-com.svg" alt="" />
+                    <p>Bootstrap</p>
+                    <img src="./img/flask.svg" alt="" />
+                    <p>Flask</p>
                   </div>
                 </div>
                 <div class="flip-container-btn">
                   <button class="flip-btn">
-                    <span> Demo</span>
+                    <a href="">
+                      <span> Demo</span>
+                    </a>
                   </button>
                   <button class="flip-btn">
-                    <span> Code</span>
+                    <a href="https://github.com/Oskitar-Ale/Flask">
+                      <span> Code</span>
+                    </a>
                   </button>
                 </div>
               </div>
@@ -193,12 +249,53 @@
       </div>
     </section>
 
+    <!-- ===== CONTACT ===== -->
 
+    <section class="contact-container">
+      <div class="section__main">
+        <h1 class="section__title titleone">Contact</h1>
 
+        <form class="form">
+          <div class="flex">
+            <label>
+              <input required="" placeholder="" type="text" class="input" />
+              <span>first name</span>
+            </label>
 
+            <label>
+              <input required="" placeholder="" type="text" class="input" />
+              <span>last name</span>
+            </label>
+          </div>
 
+          <label>
+            <input required="" placeholder="" type="email" class="input" />
+            <span>email</span>
+          </label>
 
+          <label>
+            <input required="" type="tel" placeholder="" class="input" />
+            <span>contact number</span>
+          </label>
+          <label>
+            <textarea
+              required=""
+              rows="3"
+              placeholder=""
+              class="input01"
+            ></textarea>
+            <span>message</span>
+          </label>
 
+          <button class="fancy" href="#">
+            <span class="top-key"></span>
+            <span class="text">submit</span>
+            <span class="bottom-key-1"></span>
+            <span class="bottom-key-2"></span>
+          </button>
+        </form>
+      </div>
+    </section>
 
     <!-- ===== FOOTER ===== -->
     <footer>
@@ -207,32 +304,35 @@
           <div>
             <p>
               2023 &copy;Oskitar-Ale
-              <a
-                class="text-white"
-                href=""
-                target="_blank"
-              >
-                Creador ❤
-              </a>
+              <a class="text-white" href="" target="_blank"> Creador ❤ </a>
             </p>
           </div>
           <div>
-            <a class="contact" href="https://twitter.com/by_borous" target="_blank">
-              <i class="fa-brands fa-twitter fa-2xl"></i>
+            <a
+              class="contact"
+              href="https://twitter.com/by_borous"
+              target="_blank"
+            >
+              <i class="fa-brands fa-twitter fa-2xl" style="color: #00acee"></i>
             </a>
-            <a  class="contact" href="https://github.com/Oskitar-Ale" target="_blank">
-              <i class="fa-brands fa-github fa-2xl"></i>
+            <a
+              class="contact"
+              href="https://github.com/Oskitar-Ale"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github fa-2xl" style="color: #171515"></i>
             </a>
-            <a class="contact" href="https://www.linkedin.com/"target="_blank">
-              <i class="fa-brands fa-linkedin fa-2xl"></i>
+            <a class="contact" href="https://www.linkedin.com/" target="_blank">
+              <i
+                class="fa-brands fa-linkedin fa-2xl"
+                style="color: #0e76a8"
+              ></i>
             </a>
           </div>
         </div>
       </div>
     </footer>
-
-
-
+    <script src="./js/toggle.js"></script>
     <script src="./js/proyect.js"></script>
     <script src="./js/scrollTo.js"></script>
     <script src="./js/nav-scroll.js"></script>

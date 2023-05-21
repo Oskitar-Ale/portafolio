@@ -103,17 +103,17 @@ $(function () {
     "./img/linux-svgrepo-com.svg",
     "./img/docker2-svgrepo-com.svg",
     "./img/lua-svgrepo-com.svg",
-    "./img/arduino-svgrepo-com.svg",
+    "./img/python-svgrepo-com.svg"
   ];
 
-  const tooltips = ["Texto 1", "Texto 2", "Texto 3", "Texto 4"];
-  const tooltips2 = ["Otro texto 1", "Otro texto 2"];
-  const tooltips3 = ["Texto 3-1", "Texto 3-2"];
+  const tooltips = ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP","JQUERY"];
+  const tooltips2 = ["DJANGO", "JAVA","FLASK","POSTGRESQL","MYSQL","MARIADB"];
+  const tooltips3 = ["GIT", "GITHUB","LINUX","DOCKER","LUA"];
 
   // Función para mostrar las fotos en el contenedor con transiciones
   function mostrarFotosConTransicion(fotos, tooltips) {
     // Ocultar el contenedor de imágenes con una transición de 1 segundo
-    imageContainer.fadeOut(1000, function () {
+    imageContainer.fadeOut(500, function () {
       // Limpiar el contenedor de imágenes
       imageContainer.empty();
 
@@ -127,7 +127,7 @@ $(function () {
       });
 
       // Mostrar el contenedor de imágenes con una transición de 1 segundo
-      imageContainer.fadeIn(1000);
+      imageContainer.fadeIn(500);
     });
   }
 
