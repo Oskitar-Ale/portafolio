@@ -254,47 +254,52 @@
     <section class="contact-container">
       <div class="section__main">
         <h1 class="section__title titleone">Contact</h1>
-
-        <form class="form">
-          <div class="flex">
+        <div class="container-map-form">
+          <form class="form">
+            <div class="flex">
+              <label>
+                <input required="" placeholder="" type="text" class="input" />
+                <span>first name</span>
+              </label>
+  
+              <label>
+                <input required="" placeholder="" type="text" class="input" />
+                <span>last name</span>
+              </label>
+            </div>
+  
             <label>
-              <input required="" placeholder="" type="text" class="input" />
-              <span>first name</span>
+              <input required="" placeholder="" type="email" class="input" />
+              <span>email</span>
             </label>
-
+  
             <label>
-              <input required="" placeholder="" type="text" class="input" />
-              <span>last name</span>
+              <input required="" type="tel" placeholder="" class="input" />
+              <span>contact number</span>
             </label>
-          </div>
-
-          <label>
-            <input required="" placeholder="" type="email" class="input" />
-            <span>email</span>
-          </label>
-
-          <label>
-            <input required="" type="tel" placeholder="" class="input" />
-            <span>contact number</span>
-          </label>
-          <label>
-            <textarea
-              required=""
-              rows="3"
-              placeholder=""
-              class="input01"
-            ></textarea>
-            <span>message</span>
-          </label>
-
-          <button class="fancy" href="#">
-            <span class="top-key"></span>
-            <span class="text">submit</span>
-            <span class="bottom-key-1"></span>
-            <span class="bottom-key-2"></span>
-          </button>
-        </form>
+            <label>
+              <textarea
+                required=""
+                rows="3"
+                placeholder=""
+                class="input01"
+              ></textarea>
+              <span>message</span>
+            </label>
+  
+            <button class="fancy" href="#">
+              <span class="top-key"></span>
+              <span class="text">submit</span>
+              <span class="bottom-key-1"></span>
+              <span class="bottom-key-2"></span>
+            </button>
+          </form>
+            <!--Mapa-->  
+          <div id="map"></div>
+        </div>
+        
       </div>
+      
     </section>
 
     <!-- ===== FOOTER ===== -->
@@ -332,11 +337,14 @@
         </div>
       </div>
     </footer>
+    <script src="./js/map.js"></script>
     <script src="./js/toggle.js"></script>
     <script src="./js/proyect.js"></script>
     <script src="./js/scrollTo.js"></script>
     <script src="./js/nav-scroll.js"></script>
     <script src="./js/title.js"></script>
     <script src="./js/index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB-o-kUBcV8GESv8x2nulNTqCkkFBB4u8&callback=iniciarMap"></script>
+
   </body>
 </html>

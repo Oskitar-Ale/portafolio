@@ -560,7 +560,6 @@ textarea {
   max-width: 876px;
   background-color: #5e17eb;
   /* padding: 0 50PX; */
-  margin: 0 auto;
   border-radius: 10px;
   position: relative;
 }
@@ -769,7 +768,19 @@ textarea {
 .contact {
   margin: 0 10px;
 }
+.container-map-form{
+  justify-content: center;
 
+  display:  flex;
+
+}
+
+
+
+#map{
+  height: 22rem;
+  width: 30rem;
+}
 /*=========MEDIAQUERY========*/
 
 @media (max-width: 1157px) {
@@ -780,6 +791,33 @@ textarea {
   }
   .flip-card {
     margin: 0 0 25px;
+  }
+}
+
+@media (max-width: 939px) {
+  .home__main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .home__content-btn{
+    margin: 40px 0  50px 0 ;
+  }
+}
+
+
+@media (max-width: 978px) {
+  .container-map-form{
+    flex-wrap: wrap-reverse;
+  
+  }
+  .form{
+    margin: 4em 0 0 0;
+  }
+  #map{
+    height: 20rem;
+    width: 25rem;
   }
 }
 @media (max-width: 781px) {
